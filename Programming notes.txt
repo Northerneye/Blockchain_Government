@@ -1,0 +1,9 @@
+Programming notes
+    It does not include a comments page when voting on bills, however that can be added in the future.  To run this program, install python 3.6.5, pycryptodome, and Flask.  Although pycryptodome can be somewhat finicky sometimes.  
+    You can access this example blockchain through localhost:8080 or localhost:80 if you are on the second node.  In this example you can mine the government regulated cryptocurrency, make cryptocurrency transactions, create bills, donate to bills by searching for a bill and copying its hash into the "contribute to a bill" section.  You can also see all laws that have been passed, see all bills, and search for bills on specific topics. I have left the bills which I was testing the blockchain with in the blockchain, feel free to search in the bills for "pandas"! 
+
+     Reminder, you have to mine a block before votes, bills, or transactions get added to the blockchain.  And you have to give at least 5 political-coin to a bill in order to add it to the blockchain.
+
+     Also, when first starting up a blockchain on a new node it will prompt you for your name to make it easier to transfer non-political crypto.  You can instead put the name of the recipient rather than their public key when transferring non-political crypto.  Also, government and non-government key pairs are not linked, so no one can tell what someone votes and what that same person buys.
+
+    Also, Gmail does not like jquery-3.1.0.js in the static folder, please change jquery-3.1.0 to jquery-3.1.0.js or download jquery 3.1.0 and put it into the static folder.

@@ -1,0 +1,38 @@
+<html>
+<head><title>test</title></head>
+<script>
+    function updatetextFunction(){
+      document.getElementById("ourvote").innerHTML = document.getElementById("vote").value;
+    }
+</script>
+<body>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='BillMakeStyle.css')}}">
+    <a id='HomeButton' href="{{ url_for('indexstuff') }}" target="_self">Home</a>
+    <form action="{{ url_for('voting') }}" method="POST" name="myForm">
+      {% for x in range(bill_number): %}
+        <p><label for="title">Title: {{ bills_title[x] }}</label>
+        <p><label for="bill">Bill: {{ bills_text[x] }}</label>
+        <p id="ourvote"></p>
+        <input onclick="updatetextFunction" type="submit" id="vote" name="vote" value="yes">
+        <input onclick="updatetextFunction" type="submit" id="vote" name="vote" value="no">
+      {% endfor %}
+      {% if(bill_number==0): %}
+        <p>There are no pending bills to vote on</p>
+      {% endif %}
+  </form>
+  <script src="{{url_for('static',filename='jquery-3.1.0.js')}}"></script>
+  <script type="text/javascript">
+    function submitform(){
+      var formData = JSON.stringify($("#myForm").serializeArray());
+      $.ajax({
+        type: "POST",
+        url: "{{ url_for('voting') }}",
+        data: formData,
+        success: function(){},
+        dataType: "json",
+        contentType : "application/json"
+      });
+    }
+  </script>
+</body>
+</html>

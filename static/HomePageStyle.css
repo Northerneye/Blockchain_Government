@@ -1,0 +1,89 @@
+body{
+    background-color: rgb(150, 200, 255);
+}
+h1{
+    color: rgb(0, 100, 255);
+    font-size: 75px;
+    text-align: center;
+    /*border: 1px solid tomato;
+    border-width: 1px;*/
+    margin: 25px 25px 25px 25px;
+}
+a:link, a:visited {
+    background-color: rgb(100, 100, 100);
+    color: rgb(255, 255, 255);
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+a:hover{
+    background-color: rgb(255, 100, 100);
+}
+#CurMan:link, #CurMan:visited{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: rgb(100, 200, 100);
+    color: rgb(255, 255, 255);
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+#CurMan:hover{
+    background-color: rgb(75, 75, 75);
+}
+#BillMake:link, #BillMake:visited{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: rgb(200, 50, 50);
+    color: rgb(255, 255, 255);
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+#BillMake:hover{
+    background-color: rgb(75, 75, 75);
+}
+#BillLawSearch:link, #BillLawSearch:visited{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: rgb(100, 0, 255);
+    color: rgb(255, 255, 255);
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+#BillLawSearch:hover{
+    background-color: rgb(75, 75, 75);
+}
+#CurManTitle{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(0, 150, 50);
+    font-size: 40px;
+    padding-top: 15px;
+    padding-bottom: 0px;
+}
+#BillMakeTitle{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(150, 25, 25);
+    font-size: 40px;
+    padding-top: 15px;
+    padding-bottom: 0px;
+}
+#BillLawSearchTitle{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(100, 0, 200);
+    font-size: 40px;
+    padding-top: 15px;
+    padding-bottom: 0px;
+}

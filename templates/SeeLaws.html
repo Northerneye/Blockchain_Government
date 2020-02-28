@@ -1,0 +1,12 @@
+<html>
+<head><title>test</title></head>
+<body>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='BillLawSearchStyle.css')}}">  
+    <a id='HomeButton' href="{{ url_for('indexstuff') }}" target="_self">Home</a>
+      {% for x in range(billlen): %}
+        <p id='laws'>Title: {{ passed_laws[passed_bills[x]][0] }}</p>
+        <p id='laws'>Bill: {{ passed_laws[passed_bills[x]][1] }}</p>
+        <br>
+      {% endfor %}
+</body>
+</html>

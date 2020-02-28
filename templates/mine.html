@@ -1,0 +1,14 @@
+<html>
+<head><title>Mining</title></head>
+<body>
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='CurManStyle.css')}}">
+  <a id='HomeButton' href="{{ url_for('indexstuff') }}" target="_self">Home</a>
+  <h5>index: {{ response['index'] }}</h5>
+  <h5>transactions: {{ response['transactions'] }}</h5>
+  <h5>bills: {{ response['bills'] }}</h5>
+  <h5>political transactions: {{ response['political_transactions'] }}</h5>
+  <h5>votes: {{ response['votes'] }} </h5>
+  <h5>proof: {{ response['proof'] }}</h5>
+  <h5>previous hash:{{ response['previous_hash'] }}</h5>
+</body>
+</html>

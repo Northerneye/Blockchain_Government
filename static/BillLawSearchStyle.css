@@ -1,0 +1,62 @@
+body{
+    background-color: rgb(150, 100, 255);
+}
+h1{
+    color: rgb(150, 75, 75);
+    font-size: 75px;
+    text-align: center;
+    /*border: 1px solid tomato;
+    border-width: 1px;*/
+    margin: 25px 25px 25px 25px;
+}
+p{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid purple;
+    background-color: rgb(150, 100, 255);
+    padding: 12px 20px;
+    height: 25px;
+    font-size: 20px;
+}
+a:link, a:visited {
+    background-color: rgb(100, 100, 100);
+    color: rgb(255, 255, 255);
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+a:hover{
+    background-color: rgb(255, 100, 100);
+}
+#HomeButton:link, #HomeButton:visited {
+    background-color: rgb(100, 100, 100);
+    color: rgb(255, 255, 255);
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+#HomeButton:hover{
+    background-color: rgb(50, 150, 200);
+}
+#SubmitButton:link, #SubmitButton:visited {
+    background-color: rgb(0, 125, 0);
+    color: rgb(255, 255, 255);
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+#SubmitButton:hover{
+    background-color: rgb(100, 100, 100);
+}
+#laws{
+    font-size: 15px;
+}

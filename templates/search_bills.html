@@ -1,0 +1,27 @@
+<html>
+<head><title>test</title></head>
+<body>
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='BillLawSearchStyle.css')}}">
+  <a id='HomeButton' href="{{ url_for('indexstuff') }}" target="_self">Home</a>
+  <form action="{{ url_for('search_bills') }}" method="POST" name="myForm">
+    <p><label for="keyword">Search for bills about:</label>
+    <input type="text" name="keyword" id="keyword"></p>
+
+    <input value="Submit" type="submit" onclick="submitform()">
+  </form>
+  <script src="{{url_for('static',filename='jquery-3.1.0.js')}}"></script>
+  <script type="text/javascript">
+    function submitform(){
+      var formData = JSON.stringify($("#myForm").serializeArray());
+      $.ajax({
+        type: "POST",
+        url: "{{ url_for('search_bills') }}",
+        data: formData,
+        success: function(){},
+        dataType: "json",
+        contentType : "application/json"
+      });
+    }
+  </script>
+</body>
+</html>

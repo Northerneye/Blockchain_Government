@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Blockchain Government</title>
+    </head>
+    <body>
+        <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='HomePageStyle.css')}}">
+        <h1>Blockchain Government</h1>
+        <div style="text-align:center;">
+            <p id='CurManTitle'>Currency Management</p>
+            <a id='CurMan' href="{{ url_for('mine') }}" target="_self">Mine</a>
+            <a id='CurMan' href="{{ url_for('new_transaction') }}" target="_self">Make a Transaction</a>
+            <p id='BillMakeTitle'>Bill Making</p>
+            <a id='BillMake' href="{{ url_for('new_bill') }}" target="_self">Make a Bill</a>
+            <a id='BillMake' href="{{ url_for('new_political_transactions') }}" target="_self">Contribute to a Bill</a>
+            <a id='BillMake' href="{{ url_for('voting') }}" target="_self">Vote</a>
+            <p id='BillLawSearchTitle'>Bill and Law Finding</p>
+            <a id='BillLawSearch' href="{{ url_for('show_bills') }}" target="_self">See Bills</a>
+            <a id='BillLawSearch' href="{{ url_for('get_laws') }}" target="_self">See Our Laws</a>
+            <a id='BillLawSearch' href="{{ url_for('search_bills') }}" target="_self">Search for Bills</a>
+        </div>
+        <h1>MyPCoin: {{ mypcoin }}</h1>
+        <h1>MyCoin: {{ mycoin }}</h1>
+    </body>
+</html>
